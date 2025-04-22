@@ -1,0 +1,122 @@
+:root {
+    --theme-pink: #f06292;
+    --light-pink-bg: #fff8f9;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .header {
+    text-align: center;
+    font-weight: bold;
+    color: var(--theme-pink);
+    border-bottom: 2px solid var(--theme-pink);
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .unit-option {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  .price {
+    float: right;
+    text-align: right;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+
+  .options {
+    margin-top: 10px;
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .options select {
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+  }
+
+  .unit-option.highlight {
+    border: 2px solid var(--theme-pink);
+    background-color:var(--light-pink-bg);
+  }
+
+  .most-popular {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--theme-pink);
+    color: white;
+    font-size: 0.7em;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .discount-badge {
+    background-color: var(--theme-pink);
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .free-delivery {
+    color: var(--theme-pink);
+    font-size: 0.9em;
+    margin-top: 15px;
+  }
+
+  .total {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .add-cart {
+    display: block;
+    width: 100%;
+    background: var(--theme-pink);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .powered {
+    text-align: right;
+    font-size: 0.7em;
+    color: #aaa;
+    margin-top: 10px;
+  }
+
+
+  .unit-option.highlight .options {
+    display: block;
+  }
